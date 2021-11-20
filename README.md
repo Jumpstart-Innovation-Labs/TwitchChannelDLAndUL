@@ -128,7 +128,7 @@ Required software to get this script setup. Instrcutions are for Ubuntu-based ma
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This script is very useful for automating the downloading of VODs. We use this as a way to Archive VOD's of our favourite channel to a storage server, and then we use Plex to serve these videos to our family and friends! It's expecially useful since VODs on Twitch do not stay on Twitch forever!
+Coming soon! TM
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
