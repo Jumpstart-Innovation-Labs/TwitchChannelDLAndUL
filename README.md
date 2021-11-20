@@ -25,27 +25,16 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">project_title</h3>
+<h3 align="center">Twitch Channel Download & Uploading Script</h3>
 
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/issues">Request Feature</a>
   </p>
 </div>
 
@@ -73,7 +62,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -82,7 +70,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This python script allows you to download all VODs from a specified list of Twitch Channels. Once complete, you can also configure the script to FTP upload the files to an FTP server for long term archiving. If you don't need the FTP archiving feature, check out our parent repo that has that part removed. 
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
 
@@ -92,14 +80,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://python.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -108,33 +89,41 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Here is how to get started! Please note this has only been tested on Linux. It may work on windows, with some additional modifications to the script
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Required software to get this script setup. Instrcutions are for Ubuntu-based machines.
+* python3
   ```sh
-  npm install npm@latest -g
+  sudo apt-get install python3 -y
+  ```
+* pip
+  ```sh
+  sudo apt-get install python3-pip -y
+  ```
+* git
+  ```sh
+  sudo apt-get install git -y
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL.git
    ```
-3. Install NPM packages
+2. Install PIP packages
    ```sh
-   npm install
+   sudo pip3 install -r requirements.txt
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Enter all your Twitch channels in `channels.txt`
+   ```sh
+   LinusTech
+   MichaelReeves
+   Pokimane
+   LilyPichu
    ```
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -142,9 +131,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This script is very useful for automating the downloading of VODs. We use this as a way to Archive VOD's of our favourite channel to a storage server, and then we use Plex to serve these videos to our family and friends! It's expecially useful since VODs on Twitch do not stay on Twitch forever!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -153,12 +140,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
+- [x] Initial Launch
+- [] Docker Option
+- [] Release Packages (via Github)
+    - [] Python/Apt Package????
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -185,7 +172,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -194,40 +181,22 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Your Name - [@twitter_handle](https://twitter.com/brandonaxtmann) - opensource@jumpstartlabs.co
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL.svg?style=for-the-badge
+[contributors-url]: https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL.svg?style=for-the-badge
+[forks-url]: https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/network/members
+[stars-shield]: https://img.shields.io/github/stars/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL.svg?style=for-the-badge
+[stars-url]: https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL.svg?style=for-the-badge
+[issues-url]: https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/issues
+[license-shield]: https://img.shields.io/github/license/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL.svg?style=for-the-badge
+[license-url]: https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-
-# TwitchChannelDLAndUL
-Python script to download all VODs from a channel, and then upload to an FTP server. 
+[linkedin-url]: https://linkedin.com/in/brandonaxtmann
