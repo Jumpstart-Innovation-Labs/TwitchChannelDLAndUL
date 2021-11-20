@@ -1,0 +1,8 @@
+certifi==2021.5.30
+chardet==4.0.0
+idna==2.10
+iso8601==0.1.14
+m3u8==0.3.12
+requests==2.25.1
+twitch-dl==1.16.0
+urllib3==1.26.5
