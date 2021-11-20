@@ -28,9 +28,6 @@
 <h3 align="center">Twitch Channel Download & Uploading Script</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL"><strong>Explore the docs »</strong></a>
     <br />
     <a href="https://github.com/Jumpstart-Innovation-Labs/TwitchChannelDLAndUL/issues">Report Bug</a>
     ·
